@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Portfolio">
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="greeting">Hi, my name is</p>
+        <h1>Your Name</h1>
+        <p class="tagline">Full-stack developer &amp; designer</p>
+        <p class="bio">
+          I build things for the web. Focused on creating clean, performant
+          experiences with modern technologies.
+        </p>
+        <div class="links">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  .hero-content {
+    max-width: 640px;
+    text-align: center;
+  }
+
+  .greeting {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  .bio {
+    font-size: 1.0625rem;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: #1a1a1a;
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background: #333;
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #1a1a1a;
+    border: 1px solid #d0d0d0;
+  }
+
+  .btn-secondary:hover {
+    border-color: #999;
+    background: #f0f0f0;
+  }
+</style>
